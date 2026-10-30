@@ -1,1 +1,85 @@
 
+<!-- Não tive muito uma maior dificuldade a parte mais chata foi fazer os tipos de cartas que faltavam,
+que eu fiquei pintando elas num editor de imagem...
+As que faltavam eram tipo dragão e tipo dark. 
+
+O começo do Java foi complicadinho, mas depois ficou mais fácil que ficou mais repetitivo o código,
+depois que pega o jeito de pegar do api e relacionar com o index fica bem dboa -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- POKEDEX -->
+    <section class="pokedex">
+        <!-- VIDEO GAME -->
+        <div class="videogame">
+            <!-- TELA VIDEO GAME -->
+            <div class="tela">
+                <!-- CARTA COM IMAGEM E INFOS -->
+                <div class="carta">
+                    <img class="tipoCarta" src="assets/imagens/default.png" alt="">
+                    <div class="infos">
+                        <!-- NOME -->
+                        <h1></h1>
+                        <!-- FOTO POKEMON -->
+                        <img class="pokemon" src="" alt="">
+                        <!-- INFORMAÇÕES DO POKÉMON -->
+                        <div class="atributos">
+                            <div class="caracteristicas">
+                                <p><span class="numero"></span></p>
+                                <p><span class="altura"></span></p>
+                                <p><span class="peso"></span></p>
+                            </div>
+                            <p><span class="HP"> </span> </p>
+                            <p><span class="ataque"></span> </p>
+                            <p><span class="defesa"></span> </p>
+                            <p><span class="velocidade"></span> </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM DA CARTA -->
+
+                <!-- CONTROLES -->
+                <div class="controles">
+
+                    <!-- BOTAO DE VOLTAR -->
+                    <button class="anterior">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <!-- PESQUISA -->
+                    <form class="formulario">
+                        <input type="text" placeholder="Digite o nome do Pokémon" class="input">
+                        <button type="submit" class="botao">Buscar</button>
+                    </form>
+
+                    <!-- BOTAO DE PROXIMO -->
+                    <button class="proximo">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+            </div>
+        <!-- FIM VIDEO GAME -->
+        </div>
+    <!-- FIM DA POKEDEX -->
+    </section>
+
+    <!-- JAVA SCRIPT -->
+    <script src="assets/script.js">
+    </script>
+
+</body>
+</html>
